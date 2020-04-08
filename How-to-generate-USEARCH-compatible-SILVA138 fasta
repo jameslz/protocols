@@ -6,8 +6,14 @@ Note: remove 'Unknown Family' and 'Incertae Sedis' internal node.
 
 #2. tanslate SILVA taxId to USEARCH compatible taxonomy.
 
-  tail -n +2  taxmap_slv_ssu_ref_138.txt  |        \
-       tsv-utils collapse -d '.' -f1,2  - |        \
+
+  silva-tk  patch  taxmap_slv_ssu_ref_138.txt  > taxmap_slv_ssu_patch_138.txt
+
+Note: remove 1:N species to genus map. vote strategy.
+
+
+  tail -n +2  taxmap_slv_ssu_patch_138.txt  |      \
+       tsv-utils collapse -d '.' -f1,2  -  |       \
        silva-utils translate  -c 4 taxon.map - |   \
        silva-tk fmt -                              \
        >tax_slv_ssu.taxonomy.txt
