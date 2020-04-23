@@ -26,3 +26,4 @@
  
   rm ERCC92.zip Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz Homo_sapiens.GRCh38.99.gtf.gz Homo_sapiens.GRCh38.99.gtf
   rm genome*
+ 
