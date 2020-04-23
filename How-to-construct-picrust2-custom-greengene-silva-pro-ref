@@ -73,3 +73,4 @@ use default parameters, picrust2 removes sequences aligned poorly to reference s
 
   1. build the lastest silva database
   2. use GTDB for picrust2 KEGG abundance prediction.
+
