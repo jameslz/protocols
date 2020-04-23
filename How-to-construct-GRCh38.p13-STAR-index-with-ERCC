@@ -24,3 +24,4 @@ cat ERCC92.gtf  Homo_sapiens.GRCh38.99.gtf >genome.gtf
 #clean
 
   rm genome.fa genome.gtf
+
