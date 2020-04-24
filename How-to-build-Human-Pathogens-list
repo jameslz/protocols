@@ -21,11 +21,21 @@
  stats: OK
 
 -refernce: List of Diseases Associated With Infectious Pathogens
- url:https://sites.google.com/site/humandiseaseslinkedtopathogens/
+ url: https://sites.google.com/site/humandiseaseslinkedtopathogens/
  version: 2020-04-23
  stats: OK
 
+-refernce: Pathogenic Bacteria Database: GlobalRPH
+ url: https://globalrph.com/bacteria/
+ version: 2020-04-24
+ stats: OK
 
-#status
+-refernce: VITEK® MS Microbiology Powered by Mass Spectrometry
+ url: https://www.biomerieux-diagnostics.com/vitekr-ms-0
+ version: 2020-04-24
+ stats: OK
 
-ongoing...
+-refernce: Karius Pathogen List
+ url: https://kariusdx.com/pathogenlist/3.6
+ version: 3.6
+ stats: OK
