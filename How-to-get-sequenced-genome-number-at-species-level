@@ -31,7 +31,6 @@
    | sed 's/s://'                            \
    > refseq.bins.txt
 
-
 #note
 
   ncbi.map can be generated using taxon-db: [ref][1]
