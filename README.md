@@ -20,4 +20,4 @@ README.update
   [6]: https://github.com/jameslz/protocols/blob/master/How-to-generate-USEARCH-compatible-SILVA138%20fasta
   [7]: https://github.com/jameslz/protocols/blob/master/How-to-generate-Nematode_ITS2-USEARCH-compatible%20fasta
   [8]: https://github.com/jameslz/protocols/blob/master/How-to-get-sequenced-genome-number-at-species-level
-  [9]: https://github.com/jameslz/protocols/edit/master/How-to-perform-GTDB-SSU-multi-sequence-alignment.md
+  [9]: https://github.com/jameslz/protocols/edit/master/How-to-perform-GTDB-SSU-multi-sequence-alignment
