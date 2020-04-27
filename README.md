@@ -1,5 +1,5 @@
-# protocols
-protocols for bioinformatics data analysis in DeepLab.
+
+README.update
 
 1. [How-to-build-Human-Pathogens-list][1]
 2. [How to construct Homo sapiens GRCh38.p13 STAR index with ERCC][2]
@@ -9,6 +9,7 @@ protocols for bioinformatics data analysis in DeepLab.
 5. [How to generate USEARCH compatible SILVA138 db][6]
 6. [How to generate Nematode ITS2 USEARCH db][7]
 7. [How to get sequenced genome number at species level][8]
+8. [How-to-perform-GTDB-SSU-multi-sequence-alignment][9]
 
 
   [1]: https://github.com/jameslz/protocols/blob/master/How-to-build-Human-Pathogens-list
@@ -19,3 +20,4 @@ protocols for bioinformatics data analysis in DeepLab.
   [6]: https://github.com/jameslz/protocols/blob/master/How-to-generate-USEARCH-compatible-SILVA138%20fasta
   [7]: https://github.com/jameslz/protocols/blob/master/How-to-generate-Nematode_ITS2-USEARCH-compatible%20fasta
   [8]: https://github.com/jameslz/protocols/blob/master/How-to-get-sequenced-genome-number-at-species-level
+  [9]: https://github.com/jameslz/protocols/edit/master/How-to-perform-GTDB-SSU-multi-sequence-alignment.md
