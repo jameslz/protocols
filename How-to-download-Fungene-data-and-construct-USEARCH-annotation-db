@@ -1,0 +1,15 @@
+#How to download Fungene data and construct USEARCH annotation db.
+
+#download data
+   
+download nirB gene, hmmid:347, page number: 91
+   
+   mkdir -p nirB
+   for i in {1..91};do echo  fun-curl 347 $i \>PPK/$i.txt;done | bash
+
+
+#parse nucleotide id and location
+
+    cat  nirB/*  | fun-tk list  - | fun-tk  efetch - | bash
+
+
