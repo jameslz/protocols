@@ -65,3 +65,4 @@ download nirB gene, hmmid:347, page number: 91
     fastx-utils subseq  nirB.ffn prot.txt  | \
        atlas-utils  label -p ";tax=" -r db.taxonomy -  \
        > nirB.USEAECH.ffn
+
