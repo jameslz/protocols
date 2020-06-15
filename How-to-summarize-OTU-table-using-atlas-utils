@@ -5,14 +5,14 @@ How to summarize OTU-table using atlas-utils
    atlas-utils
    zotu_table.txt, QIIME table format
 
-1. column summary
+#1. column summary
 
    calculate OTU counts and Tags counts.
       
       atlas-utils summary  zotu_table.txt
 
 
-2. row summary
+#2. row summary
 
    calculate OTU tags number in all samples
       
