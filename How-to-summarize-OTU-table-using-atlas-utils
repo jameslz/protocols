@@ -16,4 +16,4 @@ How to summarize OTU-table using atlas-utils
 
    calculate OTU tags number in all samples
       
-      atlas-utils summary  zotu_table.txt
+      atlas-utils rowsum  zotu_table.txt
