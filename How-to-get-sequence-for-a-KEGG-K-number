@@ -19,7 +19,7 @@ For example, plant fatty acid synthesis gene fabF, KEGG K number K09458.
 
 2.2 batch download
 
-    cut -f2  K00500.txt  | perl  kegg-tk  aaseq  -  10   |bash  >> K00500.faa
+    cut -f2  K00500.txt  | kegg-tk  aaseq  -  10   |bash  >> K00500.faa
     
 
 License: BY-NC-SA 4.0
