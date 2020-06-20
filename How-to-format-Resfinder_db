@@ -42,14 +42,7 @@ change: 18676889 to  NG_047469
       sort | uniq  \
       >resfinder.flat.txt
 
-  fastx-utils view -s nucleotide_fasta_protein_homolog_model.fasta  | \
-      sed 's/|/\t/g' | \
-      cut -f2,3,4,6,7 | \
-      tsv-utils annotation resfinder.taxonomy.txt - \
-      >resfinder.nucleotide.txt
-
-
-  fastx-utils view -s  resfinder_db.fasta |\
+    fastx-utils view -s  resfinder_db.fasta |\
       sort | uniq  |\
       tsv-utils annotation  resfinder.flat.txt  - |\
       tsv-utils annotation -c4  resfinder.taxonomy.txt -  | \
