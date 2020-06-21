@@ -32,18 +32,23 @@ How to format NCBI PRJNA313047 AMR genes
         perl -F: -ane  'print qq{$F[0]\t$_}' \
         >PRJNA313047.region.txt
 
+      grep -P "\tCDS\t" PRJNA313047.gff3  | \
+           perl -ne  's/ID=cds-(\S+?);Parent=.+/ID=$1/; print' |  \
+           gffread  -g  ../db/CDS.fasta  -w PRJNA313047.ffn -y  PRJNA313047.faa -
+
+#4. build db
 
      grep -P "\tCDS\t"  PRJNA313047.gff3 | \
         perl  -ane '($n)=$_=~/Name=(\S\S+?);/; ($g)=$_=~/gene=(\w\S+?);/; print qq{$F[0]\t$g\t$n\n}' | \
         tsv-utils  placehold - \
        >flat.txt
 
-
-     fastx-utils view -s  ../db/CDS.fasta  | \
-        tsv-utils annotation   flat.txt  - | \
+     fastx-utils view  ../db/CDS.fasta  | \
+        tsv-utils annotation  flat.txt  - | \
+        tsv-utils annotation  -c 3  <(fastx-utils view  -s PRJNA313047.ffn ) - | \
         tsv-utils annotation  taxonomy.txt - | \
-        tsv-utils   add_headline  "#id\tsequence\tgene\tprotein_id\tspecies\tlineage" -  \
+        tsv-utils   add_headline  "#id\tgene\tprotein_id\tsequence\tspecies\tlineage" -  \
         > PRJNA313047_db.txt
 
-
+ 
 License: BY-NC-SA 4.0
